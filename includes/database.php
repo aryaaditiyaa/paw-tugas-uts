@@ -1,4 +1,4 @@
-<?
+<?php
 require_once("config.php");
 
 class MySQLDatabase{
@@ -6,7 +6,7 @@ class MySQLDatabase{
 
     function __construct()
     {
-        $this->open_connection;
+        $this->open_connection();
     }
 
     public function open_connection()
@@ -52,4 +52,3 @@ class MySQLDatabase{
 }
 
 $database = new MySQLDatabase();
-?>
