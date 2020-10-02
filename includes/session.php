@@ -1,6 +1,8 @@
 <?php
-class Session{
-    public $pesan ='';
+
+class Session
+{
+    public $pesan = '';
     private $sudahlogin = false;
     public $uid;
     public $nama;
@@ -13,7 +15,8 @@ class Session{
         $this->check_nama();
     }
 
-    private function periksa_login(){
+    private function periksa_login()
+    {
         if (isset($_SESSION['uid'])) {
             $this->uid = $_SESSION['uid'];
             $this->sudahlogin = true;
@@ -23,27 +26,30 @@ class Session{
         }
     }
 
-    public function login($uid){
+    public function login($uid)
+    {
         if ($uid) {
             $this->uid = $_SESSION['uid'] = $uid;
             $this->sudahlogin = true;
         }
     }
 
-    public function user_sudahlogin(){
+    public function user_sudahlogin()
+    {
         return $this->sudahlogin;
     }
 
-    public function check_nama(){
+    public function check_nama()
+    {
         if (isset($_SESSION['nama'])) {
             $this->nama = $_SESSION['nama'];
-            unset($_SESSION['nama']);
         } else {
             $this->nama = '';
         }
     }
 
-    public function pesan($txt=''){
+    public function pesan($txt = '')
+    {
         if (!empty($txt)) {
             $_SESSION['pesan'] = $txt;
         } else {
@@ -51,25 +57,27 @@ class Session{
         }
     }
 
-    public function nama($namauser=""){
+    public function nama($namauser = "")
+    {
         if (!empty($namauser)) {
-            $this->nama = $namauser;
-            unset($_SESSION['nama']);
+            $_SESSION['nama'] = $namauser;
         } else {
-            $this->nama = '';
+            return $this->nama;
         }
     }
 
-    private function check_pesan(){
+    private function check_pesan()
+    {
         if (isset($_SESSION['pesan'])) {
             $this->pesan = $_SESSION['pesan'];
             unset($_SESSION['pesan']);
         } else {
-            $this->pesan="";
+            $this->pesan = "";
         }
     }
 
-    public function logout(){
+    public function logout()
+    {
         unset($_SESSION['uid']);
         unset($_SESSION['nama']);
         unset($this->nama);
@@ -77,6 +85,7 @@ class Session{
         $this->sudahlogin = false;
     }
 }
+
 $session = new Session;
 $pesan = $session->pesan();
 $nama = $session->nama();

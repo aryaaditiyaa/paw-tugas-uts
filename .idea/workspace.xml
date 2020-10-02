@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2df35a4-00ed-4d57-b121-0782d83b3163" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/includes/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/layouts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/layouts/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/layouts/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/layouts/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/layouts/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/pages/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/pages/register.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hqeed4PqnXMLLxkU7pGJLU9Dtx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../laragon/www/coba-voyager" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2df35a4-00ed-4d57-b121-0782d83b3163" name="Default Changelist" comment="" />
+      <created>1600743146352</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600743146352</updated>
+      <workItem from="1600743154156" duration="256000" />
+      <workItem from="1600752833679" duration="56000" />
+      <workItem from="1601262623334" duration="8081000" />
+      <workItem from="1601300087261" duration="522000" />
+      <workItem from="1601478326763" duration="645000" />
+      <workItem from="1601520367915" duration="617000" />
+      <workItem from="1601620658930" duration="7161000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="45" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601266221288">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="45" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1601266221288" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1600752899721">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600752899721" />
+    <state x="651" y="439" key="NewPhpFileDialog" timestamp="1601652197126">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="651" y="439" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1601652197126" />
+    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1601300606193">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1601300606193" />
+    <state x="638" y="49" width="670" height="58" key="search.everywhere.popup" timestamp="1601652384320">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="638" y="49" width="670" height="58" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601652384320" />
+  </component>
+</project>

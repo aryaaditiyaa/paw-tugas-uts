@@ -1,12 +1,12 @@
 <?php
 require_once('database.php');
 
-class User
+class Kategori
 {
-    protected static $namatable = "users";
+    protected static $namatable = "kategori";
     public $id;
-    public $email;
-    public $password;
+    public $code;
+    public $kategori_type;
     public $nama;
 
     public static function cari_dengan_sql($sql = "")
@@ -26,26 +26,11 @@ class User
         return !empty($result_array) ? array_shift($result_array) : false;
     }
 
-    public static function authenticate($email = "", $password = "")
-    {
-        global $database;
-        $hasil = false;
-        $sql = "SELECT * FROM users ";
-        $sql .= "WHERE email = '{$email}'";
-        $sql .= "AND password = '{$password}'";
-        $sql .= "LIMIT 1";
-        $hasil_array = self::cari_dengan_sql($sql);
-        if (!empty($hasil_array)) {
-            $hasil = $hasil_array[0]['id'];
-        }
-        return $hasil;
-    }
-
     public function create()
     {
         global $database;
         $sql = "INSERT INTO " . self::$namatable . " (";
-        $sql .= "email, password, nama) VALUES ('$this->email', '$this->password', '$this->nama')";
+        $sql .= "code, kategori_type, nama) VALUES ('$this->code', '$this->kategori_type', '$this->nama')";
         if ($database->query($sql)) {
             return true;
         } else {
@@ -57,7 +42,7 @@ class User
     {
         global $database;
         $sql = "UPDATE " . self::$namatable . " SET ";
-        $sql .= "email='" . $this->email . "', nama='" . $this->nama . "'";
+        $sql .= "code='" . $this->code . "', kategori_type='" . $this->kategori_type . "', nama='" . $this->nama . "'";
         $sql .= " WHERE id=" . $this->id;
         $database->query($sql);
         return ($database->affected_rows() == 1) ? true : false;

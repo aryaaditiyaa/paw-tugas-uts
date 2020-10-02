@@ -7,12 +7,12 @@ require_once("../includes/session.php");
 
 <?php require_once("layouts/header.php") ?>
 <?php require_once("layouts/navbar.php") ?>
-<main role="main" class="container">
-    <?php echo cetak_pesan($pesan)?>
-    <div class="row">
-        <div class="col">
+    <main role="main" class="container">
+        <?php echo cetak_pesan($pesan) ?>
+        <div class="row">
+            <div class="col">
 
+            </div>
         </div>
-    </div>
-</main><!-- /.container -->
+    </main><!-- /.container -->
 <?php require_once("layouts/footer.php") ?>
