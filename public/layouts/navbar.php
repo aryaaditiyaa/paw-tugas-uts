@@ -31,7 +31,7 @@ if (isset($session)) {
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
                         <a class="dropdown-item d-flex align-items-center" href="http://localhost/paw-tugas-uts/public/pages/listkategori.php"><i
                                     class="mr-2 fas fa-ellipsis-h fa-fw"></i>Kategori</a>
-                        <a class="dropdown-item d-flex align-items-center" href="#"><i
+                        <a class="dropdown-item d-flex align-items-center" href="http://localhost/paw-tugas-uts/public/pages/listpemasukan.php"><i
                                     class="mr-2 fab fa-get-pocket fa-fw"></i>Pemasukan</a>
                         <a class="dropdown-item d-flex align-items-center" href="#"><i
                                     class="mr-2 fas fa-arrow-circle-right fa-fw"></i>Pengeluaran</a>

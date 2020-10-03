@@ -1,14 +1,14 @@
 <?php
 require_once('database.php');
 
-class Kategori
+class Pemasukan
 {
-    protected static $namatable = "kategori";
+    protected static $namatable = "pemasukan";
     public $id;
-    public $code;
-    public $kategori_type;
-    public $nama;
-    public $nilaikategori;
+    public $user_id;
+    public $kategori_pemasukan;
+    public $rupiah_masuk;
+    public $tanggal_masuk;
 
     public static function cari_dengan_sql($sql = "")
     {
@@ -31,7 +31,7 @@ class Kategori
     {
         global $database;
         $sql = "INSERT INTO " . self::$namatable . " (";
-        $sql .= "code, kategori_type, nama) VALUES ('$this->code', '$this->kategori_type', '$this->nama')";
+        $sql .= "user_id, kategori_pemasukan, rupiah_masuk, tanggal_masuk) VALUES ('$this->user_id', '$this->kategori_pemasukan', '$this->rupiah_masuk', '$this->tanggal_masuk')";
         if ($database->query($sql)) {
             return true;
         } else {
@@ -43,7 +43,7 @@ class Kategori
     {
         global $database;
         $sql = "UPDATE " . self::$namatable . " SET ";
-        $sql .= "code='" . $this->code . "', kategori_type='" . $this->kategori_type . "', nama='" . $this->nama . "'";
+        $sql .= "kategori_pemasukan=" . $this->kategori_pemasukan . ", rupiah_masuk=" . $this->rupiah_masuk . ", tanggal_masuk='" . $this->tanggal_masuk . "'";
         $sql .= " WHERE id=" . $this->id;
         $database->query($sql);
         return ($database->affected_rows() == 1) ? true : false;
@@ -77,11 +77,5 @@ class Kategori
         $result_set = $database->query($sql);
         $row = $database->fetch_array($result_set);
         return array_shift($row);
-    }
-
-    public function kategorikeuangan()
-    {
-        $result_array = self::cari_dengan_sql("SELECT id, nama FROM " . self::$namatable ." WHERE kategori_type = '$this->nilaikategori'");
-        return $result_array;
     }
 }
