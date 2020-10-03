@@ -28,4 +28,32 @@ function helperkategori()
     return $cat;
 }
 
+function daftarTahun()
+{
+    $kumpulantahun = array();
+    $sekarang = date("Y");
+    $tahunmulai = $sekarang - 3;
+    for ($tahun = $sekarang; $tahun >= $tahunmulai; $tahun--) {
+        $kumpulantahun[$tahun] = $tahun;
+    }
+    return $kumpulantahun;
+}
+
+function daftarBulan()
+{
+    $bulan = array(1 => 'Januari',
+        'Februari',
+        'Maret',
+        'April',
+        'Mei',
+        'Juni',
+        'Juli',
+        'Agustus',
+        'September',
+        'Oktober',
+        'November',
+        'Desember');
+    return $bulan;
+}
+
 ?>

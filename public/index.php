@@ -10,8 +10,8 @@ require_once("../includes/session.php");
     <main role="main" class="container">
         <?php echo cetak_pesan($pesan) ?>
         <div class="row">
-            <div class="col">
-
+            <div class="col text-center mt-5">
+                <h1 class="display-3">Selamat Datang!</h1>
             </div>
         </div>
     </main><!-- /.container -->
